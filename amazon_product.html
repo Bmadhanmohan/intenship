@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Product Page</title>
+  <link rel="stylesheet" href="amazon_product.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Amazon</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Amazon" aria-label="Search Amazon" />
+      <button>Search</button>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Account</a>
+      <a href="#">Orders</a>
+      <a href="#">Cart</a>
+    </nav>
+  </header>
+
+  <main class="product-page">
+    <section class="breadcrumb">Home &gt; Electronics &gt; Headphones</section>
+
+    <section class="product-detail">
+      <div class="product-image-card">
+        <img src="https://images.unsplash.com/photo-1518440739914-6785cd1b65f7?auto=format&fit=crop&w=900&q=80" alt="Wireless headphones" />
+        <div class="thumbnail-row">
+          <img src="https://images.unsplash.com/photo-1518440739914-6785cd1b65f7?auto=format&fit=crop&w=200&q=80" alt="Thumbnail 1" />
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=200&q=80" alt="Thumbnail 2" />
+          <img src="https://images.unsplash.com/photo-1516705254020-387e12da7e3b?auto=format&fit=crop&w=200&q=80" alt="Thumbnail 3" />
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h1>Wireless Noise-Cancelling Headphones</h1>
+        <p class="rating">⭐⭐⭐⭐☆ 4.6 | 3,442 ratings</p>
+        <p class="price">$129.99</p>
+        <p class="availability">In Stock. Sold by <strong>Amazon Demo Store</strong>.</p>
+
+        <div class="buy-box">
+          <div class="buy-row">
+            <label for="quantity">Quantity:</label>
+            <input id="quantity" type="number" min="1" value="1" />
+          </div>
+          <button id="addToCartBtn" class="primary-btn">Add to Cart</button>
+          <button id="buyNowBtn" class="secondary-btn">Buy Now</button>
+        </div>
+
+        <div class="product-highlights">
+          <h2>Product Highlights</h2>
+          <ul>
+            <li>Up to 30 hours of battery life with fast charging.</li>
+            <li>Advanced noise cancellation for immersive sound.</li>
+            <li>Comfort-fit ear cushions and lightweight design.</li>
+            <li>Bluetooth 5.2 with stable multi-device pairing.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-panel">
+      <div class="detail-card">
+        <h3>About this item</h3>
+        <p>Experience premium audio with wireless Bluetooth headphones designed for comfort and long listening sessions. Ideal for travel, work, and everyday use.</p>
+        <ul>
+          <li>Brand: DemoSound</li>
+          <li>Color: Midnight Black</li>
+          <li>Connectivity: Wireless, Bluetooth</li>
+          <li>Warranty: 1-year limited warranty</li>
+        </ul>
+      </div>
+
+      <div class="detail-card">
+        <h3>Product details</h3>
+        <table>
+          <tr><th>Model</th><td>DS-500X</td></tr>
+          <tr><th>Battery life</th><td>30 hours</td></tr>
+          <tr><th>Weight</th><td>255 g</td></tr>
+          <tr><th>Bluetooth</th><td>5.2</td></tr>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>© 2026 Amazon Demo Store. Designed for a sample product page.</p>
+  </footer>
+
+  <script src="amazon_product.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Venkatesh | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GNFcawzzUrMOepuH0TkI8JkYqN4nAxqJDn7G4GqQinr5xFzZs6qg6h/PYk93©"
+    crossorigin="anonymous"
+  />
+
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Right Side Navigation Bar -->
+  <nav class="navbar-right" id="navbarRight">
+    <div class="navbar-right-content">
+      <a href="#home" class="nav-link-right">Home</a>
+      <a href="#about" class="nav-link-right">About</a>
+      <a href="#skills" class="nav-link-right">Skills</a>
+      <a href="#projects" class="nav-link-right">Projects</a>
+      <a href="#contact" class="nav-link-right">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Toggle Button for Mobile -->
+  <button class="navbar-toggle-btn" id="navToggle" onclick="toggleNavbar()">
+    <i class="fas fa-bars"></i>
+  </button>
+  <header class="bg-dark text-white py-5" id="home">
+    <div class="container text-center">
+      <h1 class="display-4">Venkatesh</h1>
+      <p class="lead mb-0">Web Developer | UI/UX Designer | Freelance Creator</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <section class="row align-items-center mb-5" id="about">
+      <div class="col-lg-6">
+        <h2>About Me</h2>
+        <p>
+          Hi, am currently pursuing a B-tech in data science with strong web development and problemsolving skills, skilled in python,html,css, javaScript. Experimental in building frontend and 
+backend project technologies 
+and improved problem-solving Gained basic knowledge of skills
+        </p>
+        <p>
+          I love turning ideas into digital experiences that look great on every screen.
+        </p>
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+      </div>
+      <div class="col-lg-6 text-center ">
+        <div class="profile-card p-4">
+          <img src="c:\Users\user\Downloads\WhatsApp Image 2026-05-11 at 7.11.34 PM.jpeg" alt="Venkatesh" class="rounded-circle mb-3 profile-img" />
+          <h3 class="mb-1">Venkatesh</h3>
+          <p class="text-muted mb-0">Front-End Enthusiast</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" id="skills">
+      <h2 class="mb-4">Skills</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 p-3">
+            <h5>Front-End</h5>
+            <p>Bootstrap, HTML5, CSS3, JavaScript, React</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-3">
+            <h5>Design</h5>
+            <p>UI/UX, Responsive Layouts, Figma, Wireframing</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-3">
+            <h5>Tools</h5>
+            <p>Git, VS Code, Chrome DevTools, Webpack</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" id="projects">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">
+                A modern responsive portfolio built with Bootstrap and custom styles.
+                Bus Ticket Booking web application and accedent detaction.
+    
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">E-commerce Landing Page</h5>
+              <p class="card-text">
+                Product showcase page with strong visual hierarchy and mobile-first layout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-5">
+      <h2 class="mb-4">Contact</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-control" id="name" type="text" placeholder="Your name" />
+              <small id="nameError" class="text-danger" style="display: none;"></small>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-control" id="email" type="email" placeholder="you@example.com" />
+              <small id="emailError" class="text-danger" style="display: none;"></small>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Say hello..."></textarea>
+              <small id="messageError" class="text-danger" style="display: none;"></small>
+            </div>
+            <button class="btn btn-success" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center py-4">
+    <p class="mb-0">© 2026 Venkatesh — Crafted with Bootstrap and CSS</p>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-..."
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="script.js"></script>
+
+  <script>
+    function toggleNavbar() {
+      const navbar = document.getElementById('navbarRight');
+      navbar.classList.toggle('active');
+    }
+
+    // Close navbar when a link is clicked
+    document.querySelectorAll('.nav-link-right').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navbarRight').classList.remove('active');
+      });
+    });
+
+    // Close navbar when clicking outside
+    document.addEventListener('click', (e) => {
+      const navbar = document.getElementById('navbarRight');
+      const toggle = document.getElementById('navToggle');
+      if (!navbar.contains(e.target) && !toggle.contains(e.target)) {
+        navbar.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
