@@ -1,101 +1,74 @@
 <!DOCTYPE html>
-            <html>
-                <head>
-                    <title>MY github webpage</title>
-                    <link rel="stylesheet" href="task1.css">
-                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-                </head>
-                        <body>
-                            <div class="container">
-                                <nav>
-                                    <button class="btn btn-outline-primary ,btn1"><a href="#home">HOME</a></button>
-                                    <button class="btn btn-outline-success"><a href="#skills">SKILLS</a></button>
-                                    <button class="btn btn-outline-warning"><a href="#projects">PROJECTS</a></button>
-                                    <button class="btn btn-outline-info"><a href="#contact">CONTACT</a></button>
-                                    <button class="btn btn-outline-info"><a href="task_1.html">Portfolio</a></button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY Github Webpage</title>
+  <link rel="stylesheet" href="task1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Responsive Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">Venky</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="netflix.html">Entertainments</a></li>
+            <li class="nav-item"><a class="nav-link" href="amazon_product.html">Shopping</a></li>
+          <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="task_1.html">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                                </nav>
-                            </div>
-                                 
-                                    <section id="home">
-                                    <h1 class="main">mobile-friendly webpage</h1>
-                                    <h1>Hi, I am Venky</h1>
-                                    <h3>Front-end Developer</h3>
-                                    <p> I created stunning websites for your <br>Skills developed website, Highly experienced in web design <br>and development.</p>
-                                    <img class="imag-shadow" src="https://cdn.outschool.com/images/outschool-filestack-general/coding-class-image_34079113-24e7-4834-a970-8c38efa903cf.png?fit=crop&height=358&width=688&quality=80&strip=true" class="img-fluid img-thumbnail" >
-                                    </section>
+  <!-- Home Section -->
+  <section id="home" class="text-center p-5">
+    <h1 class="main">Mobile-Friendly Webpage</h1>
+    <h2>Hi, I am Venky</h2>
+    <h3>Front-end Developer</h3>
+    <p>I create stunning websites with strong skills in web design and development.</p>
+    <img class="img-fluid img-thumbnail shadow" 
+         src="https://cdn.outschool.com/images/outschool-filestack-general/coding-class-image_34079113-24e7-4834-a970-8c38efa903cf.png?fit=crop&height=358&width=688&quality=80&strip=true" 
+         alt="Coding illustration">
+  </section>
 
-                                    <section id="skills">
-                                        <h1 class="tag">SKILLS</h1>
-                                        <from>
-                                            <table border="1">
-                                                <tr>
-                                                    <ul>
-                                                        <ol><H3>FRONT-END</H3></ol>
-                                                        <div class="html">
-                                                                <ol><h5>HTML</h5></ol>
-                                                                <video src="" autoplay controls></video>
-                                                         </div>
-                                                         <div class="css">
-                                                                 <ol><h5>CSS</h5></ol>
-                                                                 <video src="" autoplay controls></video>
-                                                        </div>
-                                                        <div class="javascript">
-                                                                 <ol><h5>JAVASCRIPT</h5></ol>
-                                                                <video scr="" autoplay controls></video>
-                                                        </div>
-                                                         <div class="react">
-                                                                 <ol><h5>REACT</h5></ol>
-                                                                <video scr="" autoplay controls></video>
-                                                        </div>
-                                                         <div class="angular">
-                                                                 <ol><h5>ANGULAR</h5></ol>
-                                                                <video scr="" autoplay controls></video>
-                                                        </div>
-                                                    </ul>
+  <!-- Skills Section -->
+  <section id="skills" class="p-5 bg-light">
+    <h1 class="text-center">Skills</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Front-End</h3>
+        <ul>
+          <li>HTML <video src="" controls></video></li>
+          <li>CSS <video src="" controls></video></li>
+          <li>JavaScript <video src="" controls></video></li>
+          <li>React <video src="" controls></video></li>
+          <li>Angular <video src="" controls></video></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Back-End</h3>
+        <ul>
+          <li>Django <video src="" controls></video></li>
+          <li>Node.js <video src="" controls></video></li>
+          <li>PHP <video src="" controls></video></li>
+          <li>Spring Java <video src="" controls></video></li>
+          <li>Spring Boot (Java) <video src="" controls></video></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-                                            
-
-                                                </tr>
-                                            </table>
-
-                                        </from>
-                                                <table  class="backend" border="1">
-                                                    
-                                                <tr>
-                                                    <ul>
-                                                        <ol><H3 class="backend" >BACK-END</H3></ol>
-                                                        <div class="django">
-                                                                <ol><h5>django</h5></ol>
-                                                                <video src="" autoplay controls></video>
-                                                         </div>
-                                                         <div class="nodeJs">
-                                                                 <ol><h5>NODE.JS</h5></ol>
-                                                                 <video src="" autoplay controls></video>
-                                                        </div>
-                                                        <div class="PHP">
-                                                                 <ol><h5>PHP</h5></ol>
-                                                                <video scr="" autoplay controls></video>
-                                                        </div>
-                                                         <div class="springjava">
-                                                                 <ol><h5>REACT</h5></ol>
-                                                                <video scr="" autoplay controls></video>
-                                                        </div>
-                                                         <div class="springBoot">
-                                                                 <ol><h5>PRING BOOT(JAVA)</h5></ol>
-                                                                <video scr="" autoplay controls></video>
-                                                        </div>
-                                                    </ul>
-
-                                            
-
-                                                </tr>
-                                            </table>
-
-                                        
-                                        
-                                        
-                                    </section>
-                                 
-                        </body>
-            </html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
